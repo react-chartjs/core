@@ -11,7 +11,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "cd packages/react-chartjs.github.io && yarn start",
-    "react-chartjs": "cd packages/core && tsc"
+    "react-chartjs": "cd packages/core && tsc",
+    "release": "cd packages/core && npx semantic-release --dry-run"
   },
   "husky": {
     "hooks": {
