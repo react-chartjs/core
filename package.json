@@ -10,7 +10,8 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "react-chartjs": "cd packages/react-chartjs && tsc"
+    "start": "cd packages/react-chartjs.github.io && yarn start",
+    "react-chartjs": "cd packages/core && tsc"
   },
   "husky": {
     "hooks": {

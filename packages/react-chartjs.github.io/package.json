@@ -1,0 +1,32 @@
+{
+  "name": "react-chartjs.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hieunv/react-scripts": "0.6.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "@reach/router": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/reach__router": "1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">0.25%",
+      "not op_mini all",
+      "ie 11"
+    ]
+  }
+}
