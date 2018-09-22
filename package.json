@@ -9,8 +9,8 @@
     "url": "https://github.com/hieu-nv/react-chartjs.git"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "start": "cd packages/react-chartjs.github.io && yarn start",
+    "build": "cd packages/react-chartjs.github.io && yarn build",
     "react-chartjs": "cd packages/core && tsc",
     "release": "cd packages/core && npx semantic-release --dry-run"
   },

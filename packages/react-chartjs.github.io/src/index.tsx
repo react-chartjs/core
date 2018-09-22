@@ -3,15 +3,14 @@ import { render } from 'react-dom';
 import 'reset.css/reset.css';
 import 'normalize.css/normalize.css';
 import './index.scss';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Router } from '@reach/router';
-import { Pie } from './components/Pie';
+import { Home } from './components/Home';
 
 
 render(<Router>
-  <App path="/"/>
-  <Pie path="pie"/>
+  <Home path="/*"/>
 </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
