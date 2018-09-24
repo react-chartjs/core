@@ -36,6 +36,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
         <Header/>
         <Main>
           <Router>
+            <Pie path="/"/>
             <Pie path="pie"/>
             <Line path="line"/>
           </Router>
