@@ -11,7 +11,8 @@
     "no-console": false
   },
   "rules": {
-    "ordered-imports": false
+    "ordered-imports": false,
+    "no-console": false
   },
   "linterOptions": {
     "exclude": [

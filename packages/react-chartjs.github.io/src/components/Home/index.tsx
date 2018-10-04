@@ -9,6 +9,7 @@ import { MDCTopAppBar } from '@material/top-app-bar';
 import { MDCDrawer } from '@material/drawer';
 import { Pie } from '../Pie';
 import { Line } from '../Line';
+import { Dash } from '../Dash';
 
 export class Home extends React.PureComponent<RouteComponentProps> {
   private topAppBar: MDCTopAppBar;
@@ -36,7 +37,8 @@ export class Home extends React.PureComponent<RouteComponentProps> {
         <Header/>
         <Main>
           <Router>
-            <Pie path="/"/>
+            <Dash path="/"/>
+            <Dash path="dash"/>
             <Pie path="pie"/>
             <Line path="line"/>
           </Router>

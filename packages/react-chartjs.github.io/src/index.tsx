@@ -1,9 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import 'reset.css/reset.css';
-import 'normalize.css/normalize.css';
 import './index.scss';
-// import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Router } from '@reach/router';
 import { Home } from './components/Home';
