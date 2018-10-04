@@ -4,6 +4,9 @@ import { PieChart } from '@react-chartjs/core/dist';
 import * as css from './pie.m.scss';
 
 export class Pie extends React.Component<RouteComponentProps, { pie: any }> {
+  private static randomScalingFactor(): number {
+    return Math.round(Math.random() * 100);
+  };
   private readonly chartColors: any;
   private readonly colorNames: any;
 
@@ -62,9 +65,6 @@ export class Pie extends React.Component<RouteComponentProps, { pie: any }> {
     };
   }
 
-  private static randomScalingFactor(): number {
-    return Math.round(Math.random() * 100);
-  };
 
   public render(): React.ReactNode {
     return <div className={css.pie}>

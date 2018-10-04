@@ -3,6 +3,9 @@ import { LineChart, ReactChart } from '@react-chartjs/core';
 import { RouteComponentProps } from '@reach/router';
 
 export class Line extends React.Component<RouteComponentProps, { conf: any }> {
+  private static randomScalingFactor() {
+    return Math.ceil(Math.random() * 10.0) * Math.pow(10, Math.ceil(Math.random() * 5));
+  };
 
   constructor(props: RouteComponentProps) {
     super(props);
@@ -61,10 +64,6 @@ export class Line extends React.Component<RouteComponentProps, { conf: any }> {
       }
     };
   }
-
-  private static randomScalingFactor() {
-    return Math.ceil(Math.random() * 10.0) * Math.pow(10, Math.ceil(Math.random() * 5));
-  };
 
   public render(): React.ReactNode {
     return <LineChart type={'line'} {...this.state.conf}/>;
