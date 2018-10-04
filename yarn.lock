@@ -1456,6 +1456,18 @@
   resolved "https://registry.yarnpkg.com/@material/base/-/base-0.39.0.tgz#ca451531cf438f51bf999ad7b96b5e8f3929e19a"
   integrity sha512-B+vMqnOR2JU2dzv/5UPKQUAZAj739pMkJkt3Zy7sJaQnw3j8wTKxiUMUhd9ZHaPx1FBlUNMn2PwOq8YZIn0svA==
 
+"@material/button@^0.40.0":
+  version "0.40.0"
+  resolved "https://registry.yarnpkg.com/@material/button/-/button-0.40.0.tgz#d23cac5d6f628668782cc8b12368d10450e67397"
+  integrity sha512-1HWT+Exqfcplda6xPmD9hvWmmr7Y8MdCkIhFkY14g1UuIf3rcGQGfS49HCT6OkLbcQ9tM7qgCSXHxCGK6MkY9w==
+  dependencies:
+    "@material/elevation" "^0.40.0"
+    "@material/ripple" "^0.40.0"
+    "@material/rtl" "^0.39.1"
+    "@material/shape" "^0.40.0"
+    "@material/theme" "^0.40.0"
+    "@material/typography" "^0.39.0"
+
 "@material/dom@^0.40.0":
   version "0.40.0"
   resolved "https://registry.yarnpkg.com/@material/dom/-/dom-0.40.0.tgz#c0bfdf13f76546d35db7492fd6d4167721aac376"

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { PieChart } from '@react-chartjs/core/dist';
+import classNames from 'classnames';
+import './pie.scss';
 import * as css from './pie.m.scss';
 
 export class Pie extends React.Component<RouteComponentProps, { pie: any }> {
@@ -68,9 +70,11 @@ export class Pie extends React.Component<RouteComponentProps, { pie: any }> {
 
   public render(): React.ReactNode {
     return <div className={css.pie}>
-      <button onClick={this.randomize}>Randomize Data</button>
-      <button onClick={this.add}>Add Data Set</button>
-      <button onClick={this.remove}>Remove Data Set</button>
+      <div className={css.actions}>
+        <button className={classNames('mdc-button', 'mdc-button--raised')} onClick={this.randomize}>Randomize Data</button>
+        <button className={classNames('mdc-button', 'mdc-button--raised')} onClick={this.add}>Add Data Set</button>
+        <button className={classNames('mdc-button', 'mdc-button--raised')} onClick={this.remove}>Remove Data Set</button>
+      </div>
       <PieChart {...this.state.pie}/>
     </div>;
   }
