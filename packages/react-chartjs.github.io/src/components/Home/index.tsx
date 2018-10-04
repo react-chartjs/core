@@ -14,7 +14,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
   private topAppBar: MDCTopAppBar;
   private drawer: MDCDrawer;
 
-  componentDidMount(): void {
+  public componentDidMount(): void {
     this.drawer = MDCDrawer.attachTo(document.getElementById('mdc-drawer'));
     this.drawer.open = true;
     this.topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar') as Element);
@@ -25,11 +25,11 @@ export class Home extends React.PureComponent<RouteComponentProps> {
     });
   }
 
-  componentWillUnmount(): void {
+  public componentWillUnmount(): void {
     this.topAppBar.destroy();
   }
 
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return <div>
       <Nav/>
       <div className={classNames('mdc-drawer-app-content')}>

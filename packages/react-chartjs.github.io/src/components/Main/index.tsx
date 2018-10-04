@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import './Main.scss';
 
 export class Main extends React.PureComponent {
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return <main id="main-content" className={classNames('main-content')}>
       <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
         {this.props.children}

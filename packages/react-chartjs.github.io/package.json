@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hieunv/react-scripts": "0.8.0",
-    "react": "16.3.2",
-    "react-dom": "16.3.3",
+    "@hieunv/react-scripts": "2.0.4",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
     "classnames": "2.2.6",
-    "@reach/router": "1.1.1",
+    "@reach/router": "1.2.1",
     "@material/animation": "0.39.0",
-    "@material/drawer": "0.39.3",
-    "@material/top-app-bar": "0.39.3"
+    "@material/drawer": "0.40.0",
+    "@material/top-app-bar": "0.40.0"
   },
   "devDependencies": {
     "@types/classnames": "2.2.6",

@@ -7,7 +7,7 @@ export class Header extends React.PureComponent {
     super(props);
   }
 
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
 
     return <header id="app-bar" className={classNames('mdc-top-app-bar', 'app-bar')}>
       <div className={classNames('mdc-top-app-bar__row')}>

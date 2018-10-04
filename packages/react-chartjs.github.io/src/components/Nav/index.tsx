@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 import './Nav.scss';
 
 export class Nav extends React.PureComponent {
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return <aside id="mdc-drawer" className={classNames('mdc-drawer', 'mdc-drawer--dismissible')}>
       <div className="mdc-drawer__content">
         <nav className="mdc-list">

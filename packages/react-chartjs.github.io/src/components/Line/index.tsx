@@ -9,14 +9,10 @@ export class Line extends React.Component<RouteComponentProps, { conf: any }> {
 
     this.state = {
       conf: {
-        width: '100%',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           datasets: [{
-            label: 'My First dataset',
             backgroundColor: 'rgb(255, 99, 132',
             borderColor: 'rgb(255, 159, 64)',
-            fill: false,
             data: [
               Line.randomScalingFactor(),
               Line.randomScalingFactor(),
@@ -25,12 +21,12 @@ export class Line extends React.Component<RouteComponentProps, { conf: any }> {
               Line.randomScalingFactor(),
               Line.randomScalingFactor(),
               Line.randomScalingFactor()
-            ]
+            ],
+            fill: false,
+            label: 'My First dataset'
           }, {
-            label: 'My Second dataset',
             backgroundColor: 'rgb(255, 205, 86)',
             borderColor: 'rgb(75, 192, 192)',
-            fill: false,
             data: [
               Line.randomScalingFactor(),
               Line.randomScalingFactor(),
@@ -39,15 +35,14 @@ export class Line extends React.Component<RouteComponentProps, { conf: any }> {
               Line.randomScalingFactor(),
               Line.randomScalingFactor(),
               Line.randomScalingFactor()
-            ]
-          }]
+            ],
+            fill: false,
+            label: 'My Second dataset'
+          }],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July']
         },
         options: {
           responsive: true,
-          title: {
-            display: true,
-            text: 'Chart.js Line Chart - Logarithmic'
-          },
           scales: {
             xAxes: [{
               display: true
@@ -56,17 +51,22 @@ export class Line extends React.Component<RouteComponentProps, { conf: any }> {
               display: true,
               type: 'logarithmic'
             }]
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Line Chart - Logarithmic'
           }
-        }
+        },
+        width: '100%'
       }
     };
   }
 
-  static randomScalingFactor() {
+  private static randomScalingFactor() {
     return Math.ceil(Math.random() * 10.0) * Math.pow(10, Math.ceil(Math.random() * 5));
   };
 
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return <LineChart type={'line'} {...this.state.conf}/>;
   }
 }
