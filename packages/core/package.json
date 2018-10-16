@@ -7,16 +7,14 @@
   "main": "./dist/index.js",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "chart.js": "^2.7.2"
+    "chart.js": "^2.7.3",
+    "react": "^16.5.2"
   },
   "devDependencies": {
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
-    "@types/chart.js": "^2.7.34",
-    "semantic-release": "^15.9.15",
-    "travis-deploy-once": "^5.0.7"
+    "@types/chart.js": "^2.7.38",
+    "@types/react": "^16.4.17",
+    "semantic-release": "^15.9.17",
+    "travis-deploy-once": "^5.0.9"
   },
   "scripts": {
     "semantic-release": "semantic-release",
