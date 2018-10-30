@@ -12,7 +12,7 @@ import { Line } from '../Line';
 import { Dash } from '../Dash';
 
 export class Home extends React.PureComponent<RouteComponentProps> {
-  private topAppBar: MDCTopAppBar;
+  private topAppBar: MDCTopAppBar | undefined;
   private drawer: MDCDrawer;
 
   public componentDidMount(): void {
@@ -27,6 +27,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
   }
 
   public componentWillUnmount(): void {
+    // @ts-ignore
     this.topAppBar.destroy();
   }
 

@@ -3,22 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hieunv/react-scripts": "2.0.5",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
-    "classnames": "2.2.6",
-    "@reach/router": "1.2.1",
-    "@material/animation": "0.39.0",
-    "@material/drawer": "0.40.0",
-    "@material/top-app-bar": "0.40.0",
-    "@material/button": "^0.40.0"
+    "@hieunv/react-scripts": "^2.1.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "classnames": "^2.2.6",
+    "@reach/router": "^1.2.1",
+    "@material/animation": "^0.41.0",
+    "@material/drawer": "^0.41.0",
+    "@material/top-app-bar": "^0.41.0",
+    "@material/button": "^0.41.0"
   },
   "devDependencies": {
-    "@types/classnames": "2.2.6",
-    "@types/reach__router": "1.0.1",
-    "@types/material__animation": "0.35.0",
-    "@types/material__drawer": "0.35.0",
-    "@types/material__top-app-bar": "0.35.0"
+    "@types/classnames": "^2.2.6",
+    "@types/material__animation": "^0.35.0",
+    "@types/material__drawer": "^0.35.0",
+    "@types/material__top-app-bar": "^0.35.0",
+    "@types/reach__router": "^1.2.0",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

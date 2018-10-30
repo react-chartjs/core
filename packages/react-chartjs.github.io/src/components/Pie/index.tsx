@@ -3,7 +3,7 @@ import { RouteComponentProps } from '@reach/router';
 import { PieChart } from '@react-chartjs/core/dist';
 import classNames from 'classnames';
 import './pie.scss';
-import * as css from './pie.m.scss';
+import css from './pie.m.scss';
 
 export class Pie extends React.Component<RouteComponentProps, { pie: any }> {
   private static randomScalingFactor(): number {

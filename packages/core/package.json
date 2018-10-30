@@ -8,12 +8,12 @@
   "license": "MIT",
   "dependencies": {
     "chart.js": "^2.7.3",
-    "react": "^16.5.2"
+    "react": "^16.6.0"
   },
   "devDependencies": {
-    "@types/chart.js": "^2.7.38",
-    "@types/react": "^16.4.17",
-    "semantic-release": "^15.9.17",
+    "@types/chart.js": "^2.7.40",
+    "@types/react": "^16.4.18",
+    "semantic-release": "^15.10.6",
     "travis-deploy-once": "^5.0.9"
   },
   "scripts": {
