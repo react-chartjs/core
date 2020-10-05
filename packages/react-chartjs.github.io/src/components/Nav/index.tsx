@@ -1,12 +1,12 @@
 import * as React from 'react';
+import { Drawer } from '@hieunv/react-mdc';
 import classNames from 'classnames';
 import { Link } from '@reach/router';
 import './Nav.scss';
 
 export class Nav extends React.PureComponent {
   public render(): React.ReactNode {
-    return <aside id="mdc-drawer" className={classNames('mdc-drawer', 'mdc-drawer--dismissible')}>
-      <div className="mdc-drawer__content">
+    return <Drawer dismissible={true}>
         <nav className="mdc-list">
           <Link className={classNames('mdc-list-item', 'mdc-list-item--activated')} to="dash" aria-selected="true">
             <i className={classNames('material-icons', 'mdc-list-item__graphic')} aria-hidden="true">dashboard</i>
@@ -21,7 +21,6 @@ export class Nav extends React.PureComponent {
             <span className="mdc-list-item__text">Line</span>
           </Link>
         </nav>
-      </div>
-    </aside>;
+    </Drawer>
   }
 }

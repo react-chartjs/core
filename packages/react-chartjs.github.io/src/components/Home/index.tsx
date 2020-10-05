@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Nav } from '../Nav';
 import { RouteComponentProps, Router } from '@reach/router';
 import classNames from 'classnames';
-import { Header } from '../Header';
+import { Header } from '@hieunv/react-mdc';
 import { Main } from '../Main';
 import { MDCTopAppBar } from '@material/top-app-bar';
 // @ts-ignore
@@ -35,7 +35,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
     return <div>
       <Nav/>
       <div className={classNames('mdc-drawer-app-content')}>
-        <Header/>
+        <Header>react-chartjs</Header>
         <Main>
           <Router>
             <Dash path="/"/>
